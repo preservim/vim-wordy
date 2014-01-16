@@ -30,9 +30,14 @@ function! wordy#init(...) abort
     let l:lang = get(l:args, 'lang', 'en')
     let l:encoding = get(l:args, 'encoding', 'utf-8')
     for l:dict in l:dicts
-      let l:src_path = g:wordy_dir . '/data/' . l:lang . '/' . l:dict . '.dic'
+      let l:data_dir = g:wordy_dir . '/data'
+      let l:src_path = l:data_dir . '/' . l:lang . '/' . l:dict . '.dic'
       if filereadable(l:src_path)
-        let l:dst_path = g:wordy_dir . '/spell/' . l:dict . '.' . l:lang . '.' . l:encoding . '.spl'
+        let l:spell_dir = g:wordy_dir . '/spell'
+        if !isdirectory(l:spell_dir)
+            call mkdir(expand(l:spell_dir), "p")
+        endif
+        let l:dst_path = l:spell_dir . '/' . l:dict . '.' . l:lang . '.' . l:encoding . '.spl'
         if get(l:args, 'force', 0) ||
          \ !filereadable(l:dst_path) ||
          \ getftime(l:dst_path) < getftime(l:src_path)
