@@ -16,21 +16,21 @@ Rather, _wordy_ is a lightweight tool to assist writers in identifying
 those words and phrases known for their history of misuse, abuse and
 overuse, at least according to usage experts.
 
-For example, if _wordy_ highlights ‘moreover’ in your document, a word for
-which there may be no good usage, you might consider a rewrite to
-eliminate it. But if it highlights ‘therefore’ in a sentence, you may
-consider the usage worthy and elect to keep it, _wordy_ be damned.
+For example, if _wordy_ highlights `moreover` in your document, a word for
+which no good usage exists, you should consider a rewrite to eliminate it. 
+But if it highlights `therefore` in a sentence, you can elect to keep it 
+-- _wordy_ be damned.
 
-Existing proofreading software can scan your text for potential problems
+## Why _wordy_?
+
+Off-the-shelf proofreading software can scan your text for potential problems
 and provide comprehensive feedback. However, it may require a complex
 software installation or transmission of your work to a remote server for 
 checking. 
 
 In contrast, _wordy_ stands ready as a simple alternative to these
 comprehensive tools, focusing narrowly on identifying potential problems
-in usage.
-
-_wordy_ is best used in concert with books and websites that focus on
+in usage. It is best used in concert with books and websites that focus on
 usage.
 
 ## Requirements
