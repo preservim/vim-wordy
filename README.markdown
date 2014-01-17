@@ -6,6 +6,7 @@
 
 * Pure Vimscript; no external services or libraries needed
 * Uses Vim’s native spell-check engine
+* Includes 13 dictionaries covering different types of word usage
 * Buffer-scoped configuration (leaves your global settings alone)
 
 ## What is _wordy_?
