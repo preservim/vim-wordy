@@ -118,19 +118,20 @@ where Americans may simply ‘protest’.
 
 ### Puffery and Jargonese
 
+> “The man embodies _authenticity_; his _disruptive_ ideas on
+> _self-actualization_ reflect his _dynamic_ and _transformative_
+> personality.” (puffery and jargonese)
+
 ```
 :PuffWordy
 :JargoneseWordy
 ```
 
-“The man embodies authenticity; his disruptive ideas on
-self-actualization reflect his dynamic and transformative personality.”
-(puffery and jargonese)
-
 Instead of puffery, demonstrate through details.
 
-* “The Empire State Building is breathtakingly tall.” (puffery)
-* “My ears popped several times during the minute-long elevator ride to 80th floor.” (better)
+* “The Empire State Building is _breathtakingly_ tall.” (puffery)
+* “My ears popped several times during the rapid minute-long elevator ride
+  to 80th floor.” (better)
 
 ### Manipulative language
 
