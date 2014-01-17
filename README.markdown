@@ -1,6 +1,6 @@
 # vim-wordy
 
-> A writer’s tool for uncovering potential usage problems
+> Uncovering potential usage problems in writing
 
 ## Features of this plugin
 
@@ -169,7 +169,7 @@ of the verb to be.
 :LikeWordy
 ```
 
-I couldn’t have said it better myself.
+Dictionaries for uncovering the tired cliché.
 
 ### Miscellaneous
 
