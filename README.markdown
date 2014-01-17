@@ -131,7 +131,7 @@ where Americans may simply ‘protest’.
 Instead of puffery, demonstrate through details.
 
 * “The Empire State Building is _breathtakingly_ tall.” (puffery)
-* “My ears popped several times during the rapid minute-long elevator ride
+* “My ears popped several times during the rapid elevator ride
   to 80th floor.” (better)
 
 ### Manipulative language
@@ -141,8 +141,8 @@ Instead of puffery, demonstrate through details.
 ```
 
 Words can be used to hide or obscure a weak position, or to cast doubt on
-a strong one. They can be used to mislead, to evade blame, to claim credit,
-as well as to cast doubt on a strong one.
+a strong one. They can be used to mislead, to evade blame, or to claim credit 
+where none has been earned.
 
 * “mistakes were made”
 * “discounted up to 50% off”
@@ -150,7 +150,7 @@ as well as to cast doubt on a strong one.
 * “it’s widely thought among voters that my opponent is not trustworthy”
 
 Assuming that you’re not consciously trying to manipulate others, you will
-seek to purge such loaded words from your writing.
+seek to purge such loaded language from your writing.
 
 ### Forms of to be
 
