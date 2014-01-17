@@ -25,8 +25,10 @@ function! wordy#init(...) abort
   let l:dicts = get(l:args, 'd', [])
   if len(l:dicts)
     let l:dst_paths = []
-    let l:lang = get(l:args, 'lang', &spelllang)
-    let l:encoding = get(l:args, 'encoding', &encoding)
+    " TODO &spelllang)
+    let l:lang = get(l:args, 'lang', 'en')
+    " TODO &encoding)
+    let l:encoding = get(l:args, 'encoding', 'utf-8')
     for l:dict in l:dicts
       let l:data_dir = g:wordy_dir . '/data'
       let l:src_path = l:data_dir . '/' . l:lang . '/' . l:dict . '.dic'

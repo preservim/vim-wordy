@@ -1,6 +1,6 @@
 # vim-wordy
 
-> Writer’s tool for identifying potential problems in word usage
+> Writer’s tool for identifying potential usage problems
 
 ## Features of this plugin
 
@@ -11,27 +11,26 @@
 ## What is _wordy_?
 
 _wordy_ is not a grammar checker. Nor is it a guide to proper word usage.
-Rather, _wordy_ is a rudimentary tool to assist writers in identifying
-words and phrases in their text that suffer from a history of misuse,
-abuse and overuse, at least according to usage experts.
+Rather, _wordy_ is a lightweight tool to assist writers in identifying
+those words and phrases known for their history of misuse, abuse and
+overuse, at least according to usage experts.
 
-For example, if _wordy_ highlights ‘moreover’, a word for which there may
-be no good usage, a rewrite to eliminate it would be prudent. But if it
-highlights ‘therefore’ in a sentence, you may consider the usage worthy
-and elect to keep it, _wordy_ be damned.
+For example, if _wordy_ highlights ‘moreover’ in your document, a word for
+which there may be no good usage, you might consider a rewrite to
+eliminate it. But if it highlights ‘therefore’ in a sentence, you may
+consider the usage worthy and elect to keep it, _wordy_ be damned.
 
 Existing proofreading software can scan your text for potential problems
-in grammar and usage and provide comprehensive feedback. However, some
-services require transmission of your work to a server for checking.
-Others require installation and configuration of a complex software
-package, where integration with your editor of choice may prove
-infeasible.
+and provide comprehensive feedback. However, it may require a complex
+software installation or transmission of your work to a remote server for 
+checking. 
 
-_wordy_ stands ready as a lightweight alternative to these comprehensive
-tools, focusing narrowly on identifying potential problems in usage.
+In contrast, _wordy_ stands ready as a simple alternative to these
+comprehensive tools, focusing narrowly on identifying potential problems
+in usage.
 
-_wordy_ is best used in concert with books and other resources on good
-usage in writing.
+_wordy_ is best used in concert with books and websites that focus on
+usage.
 
 ## Requirements
 
@@ -47,8 +46,8 @@ package manager.
 You’ll typically use this plugin on-demand. It does not require any
 special configuration.
 
-Important note: on the first use of each of the plugin’s dictionaries, 
-a spell file will be built. This produces a message that resembles: 
+Important note: on the first use of each of the plugin’s dictionaries,
+a spell file will be built. This produces a message that resembles:
 
 ```
 Reading word file /Users/reede/.vim/bundle/vim-wordy/data/en/cred.dic ...
@@ -61,7 +60,7 @@ Press ENTER or type command to continue
 ```
 
 As instructed, press the enter key and it will disturb you no longer, at
-least until it needs to build again. 
+least until it needs to build again.
 
 ## Commands
 
@@ -69,13 +68,13 @@ You can switch _wordy_ on and off. You’ll use the commands described below
 to enable it. To disable and restore your previous spell environment,
 enter the command:
 
-``` 
+```
 :NoWordy
 ```
 
 ### Weak and lazy usage
 
-``` 
+```
 :LazyWordy
 ```
 
@@ -95,16 +94,17 @@ We diminish the weight of our ideas by adding modifiers and fillers.
 
 Words can also be weakened through overuse.
 
-* “He _actually_ drove to work in the blizzard.” (weak) 
+* “He _actually_ drove to work in the blizzard.” (weak)
 * “He drove to work in spite of the blizzard.” (better)
 
 When using this dictionary, scrutinize each highlighted word or phrase,
 asking whether it detracts from the point you are trying to make.
 
-### Redundant phrases
+### Redundant and problematic phrases
 
-``` 
+```
 :WordyWordy
+:ProblemWordy
 ```
 
 Did you ever receive an ‘advance warning’ when a mere warning would do?
@@ -118,7 +118,7 @@ where Americans may simply ‘protest’.
 
 ### Puffery and Jargonese
 
-``` 
+```
 :PuffWordy
 :JargoneseWordy
 ```
@@ -134,54 +134,72 @@ Instead of puffery, demonstrate through details.
 
 ### Manipulative language
 
-``` 
+```
 :WeaselWordy
 ```
 
-Words can be used to hide or obscure a weak position, as well as to cast
-doubt on a strong one.
+Words can be used to hide or obscure a weak position, or to cast doubt on
+a strong one. They can be used to mislead, to evade blame, to claim credit,
+as well as to cast doubt on a strong one.
 
-“Common sense will show that you can’t trust my opponent.”
+* “mistakes were made”
+* “discounted up to 50% off”
+* “most voters feel that my opponent can’t be trusted”
+* “it’s widely thought among voters that my opponent is not trustworthy”
 
-Rather than provide the reasoning and evidence, we’ll unconsciously sneak
-in weasel words to shore up a weak facade.
+Assuming that you’re not consciously trying to manipulate others, you will
+seek to purge such loaded words from your writing.
 
-Similarly, we’ll skip reasoning and evidence and instead sneak in weasel
-words to cast fear, uncertainty and doubt upon points we seek to tear
-down.
+### Forms of to be
 
-### WordyToBe
+```
+:BeingWordy
+```
 
-If you’re not writing in the third person, you’ll want to ensure that
-you’re not overusing.
+You may find this dictionary useful in avoiding overuse of the many forms
+of the verb to be.
 
-"You were there!" by Walter Cronkite
+### Colloquialisms, Idioms, and Similies
 
-“‘Was’ is a passive, lazy bum that hangs around your writing eating all
-the snacks and drinking all the beer.” via Claire Grasse
+```
+:ColloquialWordy
+:IdiomaticWordy
+:LikeWordy
+```
 
+I couldn’t have said it better myself.
 
-### Combos
+### Miscellaneous
 
-TODO figure out which combos are best
+```
+:SaidWordy
+:OpinionatedWordy
+:TimeWordy
+```
 
-TODO show how you can define your own combo
+A few dictionaries to serve specific needs.
 
-### What this plugin will miss
+If you’re writing to be neutral, you will want to avoid editorializing
+your use of ‘said’ and other words.
 
-Adverbs and adjectives.
+_TimeWordy_ finds where you are using general descriptions of time where
+you could be more specific.
 
 ## See also
 
 If you like this plugin, you might like these others from the same author:
 
-* [vim-quotable](http://github.com/reedes/vim-quotable) - extends Vim to support typographic (‘curly’) quotes
-* [vim-pencil](http://github.com/reedes/vim-pencil) - Rethinking Vim as a tool for writers
-* [vim-thematic](http://github.com/reedes/vim-thematic) — Conveniently manage Vim’s appearance to suit your task and environment 
-* [vim-litecorrect](http://github.com/reedes/vim-litecorrect) - Lightweight auto-correction for Vim
 * [vim-colors-pencil](http://github.com/reedes/vim-colors-pencil) — A color scheme for Vim inspired by IA Writer
+* [vim-lexical](http://github.com/reedes/vim-lexical) - Building on Vim’s spell-check and thesaurus/dictionary completion
+* [vim-litecorrect](http://github.com/reedes/vim-litecorrect) - Lightweight auto-correction for Vim
+* [vim-pencil](http://github.com/reedes/vim-pencil) - Rethinking Vim as a tool for writers
+* [vim-quotable](http://github.com/reedes/vim-quotable) - extends Vim to support typographic (‘curly’) quotes
+* [vim-thematic](http://github.com/reedes/vim-thematic) — Conveniently manage Vim’s appearance to suit your task and environment
 
 ## Future development
+
+This early version supports for English and utf-8 encoding. Support for
+other languages can be added if there’s interest.
 
 _wordy_ is a work in progress. If you’ve spotted a problem or have an idea
 on improving this plugin, please post it to the github project issue page.
