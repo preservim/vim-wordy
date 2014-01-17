@@ -1,6 +1,6 @@
 # vim-wordy
 
-> Writer’s tool for identifying potential usage problems
+> A writer’s tool for uncovering potential usage problems
 
 ## Features of this plugin
 
