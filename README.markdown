@@ -28,9 +28,9 @@ and provide comprehensive feedback. However, it may require a complex
 software installation or transmission of your work to a remote server for 
 checking. 
 
-In contrast, _wordy_ stands ready as a simple alternative to these
-comprehensive tools, focusing narrowly on identifying potential problems
-in usage. It is best used in concert with books and websites that focus on
+_wordy_ stands ready as a simple alternative to these comprehensive tools, 
+focusing narrowly on identifying potential problems. To compensate for 
+_wordy_'s simplicity, it’s best used in concert with books that focus on 
 usage.
 
 ## Requirements
