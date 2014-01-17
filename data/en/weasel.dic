@@ -1,5 +1,5 @@
-# words and phrases that attempt to manipulate credibility based on 
-# something other than explicit evidence. Weasel words.
+# words and phrases that can be used to manipulate credibility 
+# based on something other than explicit evidence. Weasel words.
 # appeal to authority or ad populum
 /encoding=utf-8
 accused/!
@@ -39,6 +39,14 @@ it's often reported/!
 it's regarded/!
 it's said/!
 it's widely thought/!
+it’s been claimed that/!
+it’s been mentioned that/!
+it’s believed/!
+it’s known that/!
+it’s often reported/!
+it’s regarded/!
+it’s said/!
+it’s widely thought/!
 linked to/!
 literally/!
 many are of the opinion/!
@@ -78,16 +86,8 @@ the public/!
 the vast majority/!
 there is evidence that/!
 there's evidence that/!
+there’s evidence that/!
 threat/!
 threaten/!
 trustworthy/!
 without a doubt/!
-it’s been claimed that/!
-it’s been mentioned that/!
-it’s believed/!
-it’s known that/!
-it’s often reported/!
-it’s regarded/!
-it’s said/!
-it’s widely thought/!
-there’s evidence that/!

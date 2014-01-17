@@ -9,7 +9,6 @@
 if exists("autoloaded_wordy") | finish | endif
 let autoloaded_wordy = 1
 
-
 function! wordy#init(...) abort
   let l:args = a:0 ? a:1 : {}
 
@@ -26,16 +25,15 @@ function! wordy#init(...) abort
   let l:dicts = get(l:args, 'd', [])
   if len(l:dicts)
     let l:dst_paths = []
-    " TODO pull lang/encoding from &spelllang or $LANG
-    let l:lang = get(l:args, 'lang', 'en')
-    let l:encoding = get(l:args, 'encoding', 'utf-8')
+    let l:lang = get(l:args, 'lang', &spelllang)
+    let l:encoding = get(l:args, 'encoding', &encoding)
     for l:dict in l:dicts
       let l:data_dir = g:wordy_dir . '/data'
       let l:src_path = l:data_dir . '/' . l:lang . '/' . l:dict . '.dic'
       if filereadable(l:src_path)
         let l:spell_dir = g:wordy_dir . '/spell'
         if !isdirectory(l:spell_dir)
-            call mkdir(expand(l:spell_dir), "p")
+          call mkdir(expand(l:spell_dir), "p")
         endif
         let l:dst_path = l:spell_dir . '/' . l:dict . '.' . l:lang . '.' . l:encoding . '.spl'
         if get(l:args, 'force', 0) ||
