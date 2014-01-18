@@ -204,8 +204,9 @@ If you like this plugin, you might like these others from the same author:
 
 ## Future development
 
-This early version supports for English and utf-8 encoding. Support for
-other languages can be added if there’s interest.
+This early version targets English usage issues and utf-8 encoding.
+Support for other languages will be added if there’s interest. (Hint: pull
+requests!)
 
 _wordy_ is a work in progress. If you’ve spotted a problem or have an idea
 on improving this plugin, please post it to the github project issue page.
