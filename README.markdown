@@ -117,7 +117,8 @@ if some of the guests have crashed your event. Or dialect differences can
 erase redundancies, as the British will ‘protest against’ where Americans
 may simply ‘protest’.
 
-See [50 Problem Words and Phrases][1] for more detail.
+See [50 Problem Words and Phrases][1] for more detail on those issues
+targeted by _ProblemWordy_.
 
 [1]: http://www.dailywritingtips.com/50-problem-words-and-phrases/
 
