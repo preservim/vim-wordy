@@ -17,9 +17,9 @@ those words and phrases known for their history of misuse, abuse and
 overuse, at least according to usage experts.
 
 For example, if _wordy_ highlights `moreover` in your document, a word for
-which no good usage exists, you should consider a rewrite to eliminate it. 
-But if it highlights `therefore` in a sentence, you can elect to keep it
-—_wordy_ be damned.
+which no good usage exists, you should consider a rewrite to eliminate it.
+But if it highlights `therefore` in a sentence where you can demonstrate
+the usage is sound, you can elect to keep it —_wordy_ be damned.
 
 ## Why _wordy_?
 
@@ -79,7 +79,7 @@ enter the command:
 :LazyWordy
 ```
 
-Lazy and weak words are common in first drafts.
+Weak and lazy words common in first drafts.
 
 We sabotage our writing though weak language, kicking the legs out from
 beneath our verbs and tearing at the foundations of our nouns, watering
@@ -113,9 +113,9 @@ Why plan when you can ‘plan ahead’? Why need a thought to ‘occur to me’
 when the thought can merely ‘occur’?
 
 But redundancies may not actually be redundant: ‘invited guests’ may not
-be redundant if some of the guests have crashed your event. Or dialect
-differences can erase redundancies, as the British will ‘protest against’
-where Americans may simply ‘protest’.
+if some of the guests have crashed your event. Or dialect differences can
+erase redundancies, as the British will ‘protest against’ where Americans
+may simply ‘protest’.
 
 ### Puffery and Jargonese
 
@@ -131,8 +131,8 @@ where Americans may simply ‘protest’.
 Instead of puffery, demonstrate through details.
 
 * “The Empire State Building is _breathtakingly_ tall.” (puffery)
-* “My ears popped several times during the rapid elevator ride
-  to 80th floor.” (better)
+* “My ears popped several times during the rapid elevator ride to the 80th
+  floor.” (better)
 
 ### Manipulative language
 
@@ -147,7 +147,6 @@ where none has been earned.
 * “mistakes were made”
 * “discounted up to 50% off”
 * “most voters feel that my opponent can’t be trusted”
-* “it’s widely thought among voters that my opponent is not trustworthy”
 
 Assuming that you’re not consciously trying to manipulate others, you will
 seek to purge such loaded language from your writing.
