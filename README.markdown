@@ -18,8 +18,8 @@ overuse, at least according to usage experts.
 
 For example, if _wordy_ highlights `moreover` in your document, a word for
 which no good usage exists, you should consider a rewrite to eliminate it. 
-But if it highlights `therefore` in a sentence, you can elect to keep it 
--- _wordy_ be damned.
+But if it highlights `therefore` in a sentence, you can elect to keep it
+—_wordy_ be damned.
 
 ## Why _wordy_?
 
@@ -28,10 +28,10 @@ and provide comprehensive feedback. However, it may require a complex
 software installation or transmission of your work to a remote server for 
 checking. 
 
-_wordy_ stands ready as a simple alternative to these comprehensive tools, 
-focusing narrowly on identifying potential problems. To compensate for 
-_wordy_'s simplicity, it’s best used in concert with books that focus on 
-usage.
+_wordy_ stands ready as a simple alternative to these comprehensive tools,
+focusing narrowly on identifying potential problems. To compensate for
+_wordy_’s simplicity, it’s best used in concert with the literature on
+usage (Strunk and White, e.g.). 
 
 ## Requirements
 
