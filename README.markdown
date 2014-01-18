@@ -101,7 +101,7 @@ Words can also be weakened through overuse.
 When using this dictionary, scrutinize each highlighted word or phrase,
 asking whether it detracts from the point you are trying to make.
 
-### Redundant and problematic phrases
+### Redundant and problematic usage
 
 ```
 :WordyWordy
@@ -116,6 +116,10 @@ But redundancies may not actually be redundant: ‘invited guests’ may not
 if some of the guests have crashed your event. Or dialect differences can
 erase redundancies, as the British will ‘protest against’ where Americans
 may simply ‘protest’.
+
+See [50 Problem Words and Phrases][1] for more detail.
+
+[1]: http://www.dailywritingtips.com/50-problem-words-and-phrases/
 
 ### Puffery and Jargonese
 
