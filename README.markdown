@@ -30,8 +30,8 @@ checking.
 
 _wordy_ stands ready as a simple alternative to these comprehensive tools,
 focusing narrowly on identifying potential problems. To compensate for
-_wordy_’s simplicity, it’s best used in concert with the literature on
-usage (Strunk and White, e.g.). 
+_wordy_’s bare-bones approach, it’s best used in concert with the
+literature on usage (Strunk and White, e.g.). 
 
 ## Requirements
 
@@ -79,7 +79,7 @@ enter the command:
 :LazyWordy
 ```
 
-Weak and lazy words common in first drafts.
+Weak and lazy words are common in first drafts.
 
 We sabotage our writing though weak language, kicking the legs out from
 beneath our verbs and tearing at the foundations of our nouns, watering
