@@ -8,6 +8,7 @@
 * Uses Vim’s native spell-check engine
 * Includes 13 dictionaries covering different types of word usage
 * Buffer-scoped configuration (leaves your global settings alone)
+* Unicode-friendly, including support for ‘typographic quotes’
 
 ## What is _wordy_?
 
