@@ -40,7 +40,7 @@ command -nargs=0 Wordy call wordy#init({ 'd': [ 'being',
                                               \ 'puffery',
                                               \ 'redundant',
                                               \ 'weak-and-lazy',
-                                              \ ]
+                                              \ ])
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
