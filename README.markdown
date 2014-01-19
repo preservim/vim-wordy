@@ -1,6 +1,6 @@
 # vim-wordy
 
-> Uncovering potential usage problems in writing
+> Uncovering usage problems in writing
 
 ## Features of this plugin
 
@@ -184,7 +184,7 @@ Dictionaries for uncovering the tired cliché.
 A few dictionaries to serve specific needs.
 
 If you’re writing to be neutral, you will want to avoid editorializing
-(_OpineWordy_) and loaded use ‘said’ (_SaidWordy_).
+(_OpineWordy_) and loaded use of ‘said’ (_SaidWordy_).
 
 _TimeWordy_ finds where you are using general descriptions of time where
 you could be more specific.
