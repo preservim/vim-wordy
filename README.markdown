@@ -35,7 +35,7 @@ literature on usage (Strunk and White, e.g.).
 
 ## Requirements
 
-May require a recent version of Vim.
+_wordy_ may require a recent version of Vim.
 
 ## Installation
 
@@ -51,10 +51,10 @@ Important note: on the first use of each of the plugin’s dictionaries,
 a spell file will be built. This produces a message that resembles:
 
 ```
-Reading word file /Users/reede/.vim/bundle/vim-wordy/data/en/cred.dic ...
+Reading word file /Users/reede/.vim/bundle/vim-wordy/data/en/weasel.dic ...
 Compressing word tree...
 Compressed 618 of 1738 nodes; 1120 (64%) remaining
-Writing spell file /Users/reede/.vim/bundle/vim-wordy/spell/cred.en.utf-8.spl ...
+Writing spell file /Users/reede/.vim/bundle/vim-wordy/spell/weasel.en.utf-8.spl ...
 Done!
 Estimated runtime memory use: 5600 bytes
 Press ENTER or type command to continue
@@ -65,9 +65,8 @@ least until it needs to build again.
 
 ## Commands
 
-You can switch _wordy_ on and off. You’ll use the commands described below
-to enable it. To disable and restore your previous spell environment,
-enter the command:
+You’ll use the commands that follow to enable _wordy_. To disable it and
+restore your previous spell environment, enter the command:
 
 ```
 :NoWordy
@@ -130,7 +129,7 @@ targeted by _ProblemWordy_.
 
 ```
 :PuffWordy
-:JargoneseWordy
+:JargWordy
 ```
 
 Instead of puffery, demonstrate through details.
@@ -168,9 +167,7 @@ of the verb to be.
 ### Colloquialisms, Idioms, and Similies
 
 ```
-:ColloquialWordy
-:IdiomaticWordy
-:LikeWordy
+:TriteWordy
 ```
 
 Dictionaries for uncovering the tired cliché.
@@ -179,14 +176,14 @@ Dictionaries for uncovering the tired cliché.
 
 ```
 :SaidWordy
-:OpinionatedWordy
+:OpineWordy
 :TimeWordy
 ```
 
 A few dictionaries to serve specific needs.
 
 If you’re writing to be neutral, you will want to avoid editorializing
-your use of ‘said’ and other words.
+(_OpineWordy_) and loaded use ‘said’ (_SaidWordy_).
 
 _TimeWordy_ finds where you are using general descriptions of time where
 you could be more specific.
