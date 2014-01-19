@@ -193,14 +193,22 @@ you could be more specific.
 
 ## See also
 
-If you like this plugin, you might like these others from the same author:
+If you find this plugin useful, you may want to check out these others by
+the same author:
 
-* [vim-colors-pencil](http://github.com/reedes/vim-colors-pencil) — A color scheme for Vim inspired by IA Writer
-* [vim-lexical](http://github.com/reedes/vim-lexical) - Building on Vim’s spell-check and thesaurus/dictionary completion
-* [vim-litecorrect](http://github.com/reedes/vim-litecorrect) - Lightweight auto-correction for Vim
-* [vim-pencil](http://github.com/reedes/vim-pencil) - Rethinking Vim as a tool for writers
-* [vim-quotable](http://github.com/reedes/vim-quotable) - extends Vim to support typographic (‘curly’) quotes
-* [vim-thematic](http://github.com/reedes/vim-thematic) — Conveniently manage Vim’s appearance to suit your task and environment
+* [vim-colors-pencil][cp] — Color scheme for Vim inspired by IA Writer
+* [vim-lexical][lx] - Building on Vim’s spell-check and thesaurus/dictionary completion
+* [vim-litecorrect][lc] - Lightweight auto-correction for Vim
+* [vim-pencil][pn] - Rethinking Vim as a tool for writers
+* [vim-quotable][qu] - Extends Vim to support typographic (‘curly’) quotes
+* [vim-thematic][th] —  appearance to suit your task and environment 
+
+[cp]: http://github.com/reedes/vim-colors-pencil
+[lx]: http://github.com/reedes/vim-lexical
+[lc]: http://github.com/reedes/vim-litecorrect
+[pn]: http://github.com/reedes/vim-pencil
+[qu]: http://github.com/reedes/vim-quotable
+[th]: http://github.com/reedes/vim-thematic
 
 ## Future development
 
