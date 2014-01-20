@@ -203,7 +203,7 @@ writer Cary Morton
 [wa]: http://darlingmionette.deviantart.com/art/Words-To-Avoid-152886782
 
 If you find this plugin useful, you may want to check out these others by
-the same author:
+@reedes:
 
 * [vim-colors-pencil][cp] - color scheme for Vim inspired by IA Writer
 * [vim-lexical][lx] - building on Vim’s spell-check and thesaurus/dictionary completion
