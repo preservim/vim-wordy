@@ -14,7 +14,7 @@
 
 _wordy_ is not a grammar checker. Nor is it a guide to proper word usage.
 Rather, _wordy_ is a lightweight tool to assist writers in identifying
-those words and phrases known for their history of misuse, abuse and
+those words and phrases known for their history of misuse, abuse, and
 overuse, at least according to usage experts.
 
 For example, if _wordy_ highlights `moreover` in your document, a word for
@@ -163,7 +163,7 @@ seek to purge such loaded language from your writing.
 ```
 
 You may find this dictionary useful in avoiding overuse of the many forms
-of the verb to be.
+of the verb to be, often found in overly-passive sentences.
 
 ### Colloquialisms, Idioms, and Similies
 
@@ -171,13 +171,15 @@ of the verb to be.
 :TriteWordy
 ```
 
-Dictionaries for uncovering the tired cliché.
+Dictionaries for uncovering the tired cliché, including colloquial and
+idiomatic phrases scraped from Wiktionary and Wikipedia.
 
 ### Miscellaneous
 
 ```
 :SaidWordy
 :OpineWordy
+:AintWordy
 :TimeWordy
 ```
 
@@ -186,15 +188,24 @@ A few dictionaries to serve specific needs.
 If you’re writing to be neutral, you will want to avoid editorializing
 (_OpineWordy_) and loaded use of ‘said’ (_SaidWordy_).
 
-_TimeWordy_ finds where you are using general descriptions of time where
-you could be more specific.
+If you’re writing formally, you’ll want to identify unintentional
+contractions with _AintWordy_. A warning that it’s not yet capturing most
+instances of “’s”, such as “Joe’s not here.”
+
+And finally, _TimeWordy_ finds where you are using general descriptions of
+time where you could be more specific.
 
 ## See also
+
+[Words To Avoid in Creative Writing][wa] - a brief guide to usage by
+writer Cary Morton
+
+[wa]: http://darlingmionette.deviantart.com/art/Words-To-Avoid-152886782
 
 If you find this plugin useful, you may want to check out these others by
 the same author:
 
-* [vim-colors-pencil][cp] — color scheme for Vim inspired by IA Writer
+* [vim-colors-pencil][cp] - color scheme for Vim inspired by IA Writer
 * [vim-lexical][lx] - building on Vim’s spell-check and thesaurus/dictionary completion
 * [vim-litecorrect][lc] - lightweight auto-correction for Vim
 * [vim-pencil][pn] - rethinking Vim as a tool for writers

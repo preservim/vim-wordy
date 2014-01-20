@@ -20,13 +20,15 @@ command -nargs=0 NoWordy           call wordy#init({})
 command -nargs=0 BeingWordy        call wordy#init({ 'd': ['being',] })
 command -nargs=0 JargWordy         call wordy#init({ 'd': ['jargonese',] })
 command -nargs=0 LazyWordy         call wordy#init({ 'd': ['weak-and-lazy',] })
-command -nargs=0 OpineWordy        call wordy#init({ 'd': ['opinion',] })
 command -nargs=0 ProblemWordy      call wordy#init({ 'd': ['problematic',] })
 command -nargs=0 PuffWordy         call wordy#init({ 'd': ['puffery',] })
-command -nargs=0 SaidWordy         call wordy#init({ 'd': ['said-synonyms',] })
 command -nargs=0 TimeWordy         call wordy#init({ 'd': ['non-spec-time',] })
 command -nargs=0 WeaselWordy       call wordy#init({ 'd': ['weasel',] })
 command -nargs=0 WordyWordy        call wordy#init({ 'd': ['redundant',] })
+
+command -nargs=0 OpineWordy        call wordy#init({ 'd': ['opinion',] })
+command -nargs=0 SaidWordy         call wordy#init({ 'd': ['said-synonyms',] })
+command -nargs=0 AintWordy         call wordy#init({ 'd': ['contractions',] })
 
 command -nargs=0 TriteWordy        call wordy#init({ 'd': [ 'colloquial', 'idiomatic', 'similies',] })
 
