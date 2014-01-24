@@ -22,7 +22,7 @@ command -nargs=0 JargWordy         call wordy#init({ 'd': ['jargonese',] })
 command -nargs=0 LazyWordy         call wordy#init({ 'd': ['weak-and-lazy',] })
 command -nargs=0 ProblemWordy      call wordy#init({ 'd': ['problematic',] })
 command -nargs=0 PuffWordy         call wordy#init({ 'd': ['puffery',] })
-command -nargs=0 TimeWordy         call wordy#init({ 'd': ['non-spec-time',] })
+command -nargs=0 VagueTimeWordy    call wordy#init({ 'd': ['vague-time',] })
 command -nargs=0 WeaselWordy       call wordy#init({ 'd': ['weasel',] })
 command -nargs=0 WordyWordy        call wordy#init({ 'd': ['redundant',] })
 

@@ -180,7 +180,7 @@ idiomatic phrases scraped from Wiktionary and Wikipedia.
 :SaidWordy
 :OpineWordy
 :AintWordy
-:TimeWordy
+:VagueTimeWordy  (renamed from TimeWordy)
 ```
 
 A few dictionaries to serve specific needs.
@@ -192,7 +192,7 @@ If you’re writing formally, you’ll want to identify unintentional
 contractions with _AintWordy_. A warning that it’s not yet capturing most
 instances of “’s”, such as “Joe’s not here.”
 
-And finally, _TimeWordy_ finds where you are using vague descriptions of
+And finally, _VagueTimeWordy_ finds where you are using vague descriptions of
 time where you could be more specific.
 
 ## See also
