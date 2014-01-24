@@ -115,7 +115,7 @@ when the thought can merely ‘occur’?
 But redundancies may not actually be redundant: ‘invited guests’ may not
 if some of the guests have crashed your event. Or dialect differences can
 erase redundancies, as the British will ‘protest against’ where Americans
-may simply ‘protest’.
+will simply ‘protest’.
 
 See [50 Problem Words and Phrases][1] for more detail on those issues
 targeted by _ProblemWordy_.
@@ -192,7 +192,7 @@ If you’re writing formally, you’ll want to identify unintentional
 contractions with _AintWordy_. A warning that it’s not yet capturing most
 instances of “’s”, such as “Joe’s not here.”
 
-And finally, _TimeWordy_ finds where you are using general descriptions of
+And finally, _TimeWordy_ finds where you are using vague descriptions of
 time where you could be more specific.
 
 ## See also
