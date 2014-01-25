@@ -36,13 +36,13 @@ command -nargs=0 TriteWordy        call wordy#init({ 'd': [ 'colloquial', 'idiom
 command -nargs=0 Wordy call wordy#init({ 'd': [ 'being',
                                               \ 'colloquial',
                                               \ 'idiomatic',
-                                              \ 'jargonese',
+                                              \ 'jargon',
                                               \ 'weasel',
                                               \ 'opinion',
                                               \ 'puffery',
                                               \ 'redundant',
                                               \ 'similies',
-                                              \ 'weak-and-lazy',
+                                              \ 'weak',
                                               \ ]})
 
 
