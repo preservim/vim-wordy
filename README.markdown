@@ -1,6 +1,6 @@
 # vim-wordy
 
-> Uncovering usage problems in writing
+> Uncover usage problems in your writing
 
 ## Features of this plugin
 
@@ -210,7 +210,7 @@ If you find this plugin useful, you may want to check out these others by
 * [vim-litecorrect][lc] - lightweight auto-correction for Vim
 * [vim-pencil][pn] - rethinking Vim as a tool for writers
 * [vim-quotable][qu] - extends Vim to support typographic (‘curly’) quotes
-* [vim-thematic][th] — modify Vim’s appearance to suit your task and environment 
+* [vim-thematic][th] - modify Vim’s appearance to suit your task and environment 
 
 [re]: https://github.com/reedes
 [cp]: http://github.com/reedes/vim-colors-pencil
