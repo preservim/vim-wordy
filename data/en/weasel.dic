@@ -1,6 +1,8 @@
 # words and phrases that can be used to manipulate credibility 
 # based on something other than explicit evidence. Weasel words.
 # appeal to authority or ad populum
+# http://en.wikipedia.org/wiki/Wikipedia:WEASEL#Unsupported_attributions
+# http://en.wikipedia.org/wiki/Wikipedia:Vagueness
 /encoding=utf-8
 accused/!
 alleged/!

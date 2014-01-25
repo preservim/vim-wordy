@@ -76,7 +76,7 @@ restore your previous spell environment, enter the command:
 ### Weak and lazy usage
 
 ```
-:LazyWordy
+:WeakWordy
 ```
 
 Weak and lazy words are common in first drafts.
@@ -130,7 +130,7 @@ targeted by _ProblemWordy_.
 
 ```
 :PuffWordy
-:JargWordy
+:JargonWordy
 ```
 
 Instead of puffery, demonstrate through details.
