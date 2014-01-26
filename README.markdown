@@ -6,7 +6,7 @@
 
 * Pure Vimscript; no external services or libraries needed
 * Uses Vim’s native spell-check engine
-* Includes 13 dictionaries covering different types of word usage
+* Includes 16 dictionaries covering different types of word usage
 * Buffer-scoped configuration (leaves your global settings alone)
 * Unicode-friendly, including support for ‘typographic quotes’
 
@@ -156,10 +156,11 @@ where none has been earned.
 Assuming that you’re not consciously trying to manipulate others, you will
 seek to purge such loaded language from your writing.
 
-### Forms of to be
+### To be and the passive voice
 
 ```
 :BeingWordy
+:PassiveWordy  (includes BeingWordy)
 ```
 
 You may find this dictionary useful in avoiding overuse of the many forms
@@ -197,9 +198,9 @@ time where you could be more specific.
 
 ## See also
 
-[Words To Avoid in Creative Writing][wa] - a brief guide to usage by
-writer Cary Morton
+[Words To Avoid in Creative Writing][wa] - a brief guide to usage by writer Cary Morton
 
+[wg]: https://github.com/bnbeckwith/writegood-mode
 [wa]: http://darlingmionette.deviantart.com/art/Words-To-Avoid-152886782
 
 If you find this plugin useful, you may want to check out these others by
