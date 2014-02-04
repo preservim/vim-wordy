@@ -19,7 +19,7 @@ overuse, at least according to usage experts.
 
 For example, if _wordy_ highlights `moreover` in your document, a word for
 which no good usage exists, you should consider a rewrite to eliminate it.
-But if it highlights `therefore` in a sentence where you can demonstrate
+But if _wordy_ highlights `therefore` in a sentence where you can demonstrate
 the usage is sound, you can elect to keep it —_wordy_ be damned.
 
 ## Why _wordy_?
@@ -30,9 +30,9 @@ software installation or transmission of your work to a remote server for
 checking. 
 
 _wordy_ stands ready as a simple alternative to these comprehensive tools,
-focusing narrowly on identifying potential problems. To compensate for
-_wordy_’s bare-bones approach, it’s best used in concert with the
-literature on usage (Strunk and White, e.g.). 
+focusing narrowly on identifying potential problems that might otherwise 
+be missed. To compensate for _wordy_’s bare-bones approach, it’s best used 
+in concert with the literature on usage (Strunk and White, e.g.). 
 
 ## Requirements
 
@@ -62,7 +62,7 @@ Press ENTER or type command to continue
 ```
 
 As instructed, press the enter key and it will disturb you no longer, at
-least until it needs to build again.
+least until _wordy_ feels the urge to build again.
 
 ## Commands
 
@@ -86,7 +86,7 @@ beneath our verbs and tearing at the foundations of our nouns, watering
 down the very points that we are trying to drive home.
 
 * “I _got_ up and _went_ to work.” (weak)
-* “I awoke and drove to work.” (better)
+* “I awoke and walked to work.” (better)
 
 We diminish the weight of our ideas by adding modifiers and fillers.
 
@@ -136,7 +136,7 @@ targeted by _ProblemWordy_.
 Instead of puffery, demonstrate through details.
 
 * “The Empire State Building is _breathtakingly_ tall.” (puffery)
-* “My ears popped several times during the rapid elevator ride to the 80th
+* “My ears popped several times during the rapid ascent to the 80th
   floor.” (better)
 
 ### Manipulative language
@@ -153,8 +153,8 @@ where none has been earned.
 * “discounted up to 50% off”
 * “most voters feel that my opponent can’t be trusted”
 
-Assuming that you’re not consciously trying to manipulate others, you will
-seek to purge such loaded language from your writing.
+Assuming that you’re not intentionally trying to manipulate others, you 
+will seek to purge such loaded language from your writing.
 
 ### To be and the passive voice
 
