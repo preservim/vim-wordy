@@ -2,7 +2,13 @@
 
 > Uncover usage problems in your writing
 
-## Features of this plugin
+<br/>
+
+- - -
+![demo](screenshots/demo.gif)
+- - -
+
+## Features of the _wordy_ plugin
 
 * Pure Vimscript; no external services or libraries needed
 * Uses Vim’s native spell-check engine
