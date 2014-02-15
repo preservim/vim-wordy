@@ -37,8 +37,10 @@ checking.
 
 _wordy_ stands ready as a simple alternative to these comprehensive tools,
 focusing narrowly on identifying potential problems that might otherwise 
-be missed. To compensate for _wordy_’s bare-bones approach, it’s best used 
-in concert with the literature on usage (Strunk and White, e.g.). 
+be missed. To compensate for _wordy_’s bare-bones approach, it’s best used
+in concert with the [literature on usage][lit] (Strunk and White, e.g.). 
+
+[lit]: http://www.goodreads.com/shelf/show/english-usage
 
 ## Requirements
 
@@ -70,7 +72,7 @@ Press ENTER or type command to continue
 As instructed, press the enter key and it will disturb you no longer, at
 least until _wordy_ feels the urge to build again.
 
-## Commands
+## Using _wordy_
 
 You’ll use the commands that follow to enable _wordy_. To disable it and
 restore your previous spell environment, enter the command:
@@ -78,6 +80,12 @@ restore your previous spell environment, enter the command:
 ```
 :NoWordy
 ```
+
+Use Vim’s _Normal_ mode commands for navigating misspelled words to
+navigate to those words flagged by _wordy_.
+
+* `]s`			- Move to next misspelled word after the cursor.
+* `[s`			- Like `]s` but search backwards
 
 ### Weak and lazy usage
 
@@ -206,7 +214,6 @@ time where you could be more specific.
 
 [Words To Avoid in Creative Writing][wa] - a brief guide to usage by writer Cary Morton
 
-[wg]: https://github.com/bnbeckwith/writegood-mode
 [wa]: http://darlingmionette.deviantart.com/art/Words-To-Avoid-152886782
 
 If you find this plugin useful, you may want to check out these others by
