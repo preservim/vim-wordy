@@ -38,9 +38,11 @@ checking.
 _wordy_ stands ready as a simple alternative to these comprehensive tools,
 focusing narrowly on identifying potential problems that might otherwise 
 be missed. To compensate for _wordy_’s bare-bones approach, it’s best used
-in concert with the [literature on usage][lit] (Strunk and White, e.g.). 
+in concert with the [literature on usage][lit] (Strunk and White, e.g.)
+and websites like the [English Language & Usage Stack Exchange][ese]. 
 
-[lit]: http://www.goodreads.com/shelf/show/english-usage
+[lit]: http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks&field-keywords=English+Usage
+[ese]: http://english.stackexchange.com
 
 ## Requirements
 
