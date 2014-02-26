@@ -19,7 +19,7 @@
 ## What is _wordy_?
 
 _wordy_ is not a grammar checker. Nor is it a guide to proper word usage.
-Rather, _wordy_ is a lightweight tool to assist writers in identifying
+Rather, _wordy_ is a lightweight tool to assist you in identifying
 those words and phrases known for their history of misuse, abuse, and
 overuse, at least according to usage experts.
 
@@ -84,7 +84,7 @@ restore your previous spell environment, enter the command:
 ```
 
 Use Vim’s _Normal_ mode commands for navigating misspelled words to
-navigate to those words flagged by _wordy_.
+go to those words flagged by _wordy_.
 
 * `]s`			- Move to next misspelled word after the cursor.
 * `[s`			- Like `]s` but search backwards
@@ -125,7 +125,7 @@ asking whether it detracts from the point you are trying to make.
 ```
 
 Did you ever receive an ‘advance warning’ when a mere warning would do?
-Why plan when you can ‘plan ahead’? Why need a thought to ‘occur to me’
+Why plan when you can ‘plan ahead’? Why need a thought to ‘occur to you’
 when the thought can merely ‘occur’?
 
 But redundancies may not actually be redundant: ‘invited guests’ may not
