@@ -39,21 +39,40 @@ command -nargs=0 OpineWordy        call wordy#init({ 'd': ['opinion',] })
 command -nargs=0 SaidWordy         call wordy#init({ 'd': ['said-synonyms',] })
 command -nargs=0 AintWordy         call wordy#init({ 'd': ['contractions',] })
 
-" tools for creative writing
-command -nargs=0 CreativeWordy call wordy#init({ 'd': [ 'being',
-                                                      \ 'colloquial',
-                                                      \ 'idiomatic',
-                                                      \ 'business-jargon',
-                                                      \ 'art-jargon',
-                                                      \ 'weasel',
-                                                      \ 'opinion',
-                                                      \ 'passive-voice',
-                                                      \ 'puffery',
-                                                      \ 'redundant',
-                                                      \ 'similies',
-                                                      \ 'weak',
-                                                      \ ]})
+command -nargs=0 NextWordy         call wordy#jump('#next')
+command -nargs=0 PrevWordy         call wordy#jump('#prev')
 
+let g:wordy = ''
+
+" ordered list of keys into s:wordy#data; user configurable
+if !exists('g:wordy#ring')
+  let g:wordy#ring = [
+    \ 'jargon'    ,
+    \ 'passive'   ,
+    \ 'puffery'   ,
+    \ 'redundant' ,
+    \ 'to-be'     ,
+    \ 'trite'     ,
+    \ 'weak'      ,
+    \ 'weasel'    ,
+    \ ]
+endif
+
+if !exists('g:wordy#data')
+  let g:wordy#data = {
+    \ 'to-be'     : [['being'           ], 'Subject-verb agreement' ],
+    \ 'trite'     : [['colloquial'      ,
+    \                 'idiomatic'       ,
+    \                 'similies'        ], 'colloquialisms, idioms, and similes' ],
+    \ 'jargon'    : [['business-jargon' ], 'insidery jargon for business' ],
+    \ 'weasel'    : [['weasel'          ], 'manipulative and equivocating words and phrases' ],
+    \ 'passive'   : [['being'           ,
+    \                 'passive-voice'   ], 'can be used to avoid responsibility for actions taken' ],
+    \ 'puffery'   : [['puffery'         ], 'statements and claims that express subjective rather than objective views' ],
+    \ 'redundant' : [['redundant'       ], 'redundant phrasings' ],
+    \ 'weak'      : [['weak'            ], 'weak and lazy language' ],
+    \ }
+endif
 
 let &cpo = s:save_cpo
 unlet s:save_cpo

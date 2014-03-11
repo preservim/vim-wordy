@@ -15,6 +15,7 @@
 * Includes 16 dictionaries covering different types of word usage
 * Buffer-scoped configuration (leaves your global settings alone)
 * Unicode-friendly, including support for ‘typographic quotes’
+* User-configurable ring of dictionaries
 
 ## What is _wordy_?
 
@@ -55,6 +56,8 @@ package manager.
 
 ## Configuration
 
+### On demand
+
 You’ll typically use this plugin on-demand. It does not require any
 special configuration.
 
@@ -73,6 +76,30 @@ Press ENTER or type command to continue
 
 As instructed, press the enter key and it will disturb you no longer, at
 least until _wordy_ feels the urge to build again.
+
+### Ring
+
+Optionally map a key in your `.vimrc` to rapidly cycle among available dictionaries:
+
+```
+nnoremap <silent> K :NextWordy<cr>
+```
+
+In addition, you can define your own ring of dictionaries. This is the
+default, which you can override in your `.vimrc`:
+
+```
+let g:wordy#ring = [
+  \ 'jargon'    ,
+  \ 'passive'   ,
+  \ 'puffery'   ,
+  \ 'redundant' ,
+  \ 'to-be'     ,
+  \ 'trite'     ,
+  \ 'weak'      ,
+  \ 'weasel'    ,
+  \ ]
+```
 
 ## Using _wordy_
 

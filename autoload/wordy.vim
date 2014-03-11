@@ -61,4 +61,48 @@ function! wordy#init(...) abort
   endif
 endfunction
 
+function! wordy#jump(mode)
+  let g:wordy = s:wordy_get(a:mode)
+  let l:entry = get(g:wordy#data, g:wordy, [])
+  if len(l:entry) > 0
+    call wordy#init({ 'd': l:entry[0] })
+    echo g:wordy . ': ' . l:entry[1]
+  endif
+endfunction
+
+function! s:wordy_get(mode)
+  let l:avail_count = len(g:wordy#ring)
+  let l:new_n = -1
+  if a:mode == '#first'
+    let l:new_n = 0
+  elseif a:mode == '#last'
+    let l:new_n = l:avail_count - 1
+  elseif a:mode == '#random'
+    let l:new_n =
+          \ str2nr(matchstr(reltimestr(reltime()), '\v\.@<=\d+')[1:])
+          \ % l:avail_count
+  elseif a:mode == '#next' || a:mode == '#previous'
+    let l:current_n = index(g:wordy#ring, g:wordy)
+    if a:mode == '#next'
+      if l:current_n == -1 || l:current_n == l:avail_count - 1
+        let l:new_n = 0
+      else
+        let l:new_n = l:current_n + 1
+      endif
+    elseif a:mode == '#previous'
+      if l:current_n <= 0
+        let l:new_n = l:avail_count - 1
+      else
+        let l:new_n = l:current_n - 1
+      endif
+    endif
+  endif
+
+  if l:new_n == -1
+    return a:mode
+  else
+    return g:wordy#ring[l:new_n]
+  endif
+endfunction
+
 " vim:ts=2:sw=2:sts=2
