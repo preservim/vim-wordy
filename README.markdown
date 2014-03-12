@@ -15,7 +15,7 @@
 * Includes 16 dictionaries covering different types of word usage
 * Buffer-scoped configuration (leaves your global settings alone)
 * Unicode-friendly, including support for ‘typographic quotes’
-* Supports a user-configurable ring of dictionaries
+* User-configurable ring of dictionaries
 
 ## What is _wordy_?
 
@@ -58,8 +58,7 @@ package manager.
 
 ### On demand
 
-You’ll typically use this plugin on-demand. It does not require any
-special configuration.
+Using this plugin's commands does not require any special configuration.
 
 Important note: on the first use of each of the plugin’s dictionaries,
 a spell file will be built. This produces a message that resembles:
@@ -77,7 +76,7 @@ Press ENTER or type command to continue
 As instructed, press the enter key and it will disturb you no longer, at
 least until _wordy_ feels the urge to build again.
 
-### Ring
+### Ring navigation
 
 Define your own ring of dictionaries, overriding the default one in your
 `.vimrc`:
@@ -101,8 +100,8 @@ You can navigate the ring with the following commands:
 :PrevWordy
 ```
 
-Optionally create a key map in your `.vimrc` to rapidly cycle through the
-ring:
+Optionally map a key in your `.vimrc` to rapidly cycle through the
+ring's dictionaries:
 
 ```
 nnoremap <silent> K :NextWordy<cr>
