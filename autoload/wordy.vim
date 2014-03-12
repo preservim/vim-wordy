@@ -22,7 +22,8 @@ function! wordy#init(...) abort
   endif
 
   " switch to usage dictionaries, building if needed
-  let l:dicts = get(l:args, 'd', [])
+  let l:d = get(l:args, 'd', [])   " may be string or list
+  let l:dicts = (type(l:d) == type([])) ? l:d : [l:d]
   if len(l:dicts)
     let l:dst_paths = []
     " TODO &spelllang)
@@ -58,7 +59,25 @@ function! wordy#init(...) abort
       exe 'setlocal spelllang=' . l:lang . ',' . join(l:dst_paths, ',')
       setlocal spell
     endif
+    echohl ModeMsg | echo 'wordy: ' . join(l:dicts, ', ') | echohl NONE
   endif
+endfunction
+
+function! wordy#jump(mode)
+  " mode=1  next in ring
+  " mode=-1 prev in ring
+  let l:avail_count = len(g:wordy#ring)
+  if l:avail_count == 0 | return | endif
+  if g:wordy_ring_index < 0
+    " ring navigation not initialized; start at begin or end
+    let g:wordy_ring_index =
+      \ a:mode == 1
+      \ ? 0
+      \ : (l:avail_count - 1)
+  else
+    let g:wordy_ring_index = (g:wordy_ring_index + a:mode) % l:avail_count
+  endif
+  call wordy#init({ 'd': g:wordy#ring[ g:wordy_ring_index ]})
 endfunction
 
 " vim:ts=2:sw=2:sts=2
