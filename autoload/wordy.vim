@@ -22,7 +22,8 @@ function! wordy#init(...) abort
   endif
 
   " switch to usage dictionaries, building if needed
-  let l:dicts = get(l:args, 'd', [])
+  let l:d = get(l:args, 'd', [])   " may be string or list
+  let l:dicts = (type(l:d) == type([])) ? l:d : [l:d]
   if len(l:dicts)
     let l:dst_paths = []
     " TODO &spelllang)
@@ -58,51 +59,25 @@ function! wordy#init(...) abort
       exe 'setlocal spelllang=' . l:lang . ',' . join(l:dst_paths, ',')
       setlocal spell
     endif
+    echohl ModeMsg | echo 'wordy: ' . join(l:dicts, ', ') | echohl NONE
   endif
 endfunction
 
 function! wordy#jump(mode)
-  let g:wordy = s:wordy_get(a:mode)
-  let l:entry = get(g:wordy#data, g:wordy, [])
-  if len(l:entry) > 0
-    call wordy#init({ 'd': l:entry[0] })
-    echo g:wordy . ': ' . l:entry[1]
-  endif
-endfunction
-
-function! s:wordy_get(mode)
+  " mode=1  next in ring
+  " mode=-1 prev in ring
   let l:avail_count = len(g:wordy#ring)
-  let l:new_n = -1
-  if a:mode == '#first'
-    let l:new_n = 0
-  elseif a:mode == '#last'
-    let l:new_n = l:avail_count - 1
-  elseif a:mode == '#random'
-    let l:new_n =
-          \ str2nr(matchstr(reltimestr(reltime()), '\v\.@<=\d+')[1:])
-          \ % l:avail_count
-  elseif a:mode == '#next' || a:mode == '#previous'
-    let l:current_n = index(g:wordy#ring, g:wordy)
-    if a:mode == '#next'
-      if l:current_n == -1 || l:current_n == l:avail_count - 1
-        let l:new_n = 0
-      else
-        let l:new_n = l:current_n + 1
-      endif
-    elseif a:mode == '#previous'
-      if l:current_n <= 0
-        let l:new_n = l:avail_count - 1
-      else
-        let l:new_n = l:current_n - 1
-      endif
-    endif
-  endif
-
-  if l:new_n == -1
-    return a:mode
+  if l:avail_count == 0 | return | endif
+  if g:wordy_ring_index < 0
+    " ring navigation not initialized; start at begin or end
+    let g:wordy_ring_index =
+      \ a:mode == 1
+      \ ? 0
+      \ : (l:avail_count - 1)
   else
-    return g:wordy#ring[l:new_n]
+    let g:wordy_ring_index = (g:wordy_ring_index + a:mode) % l:avail_count
   endif
+  call wordy#init({ 'd': g:wordy#ring[ g:wordy_ring_index ]})
 endfunction
 
 " vim:ts=2:sw=2:sts=2

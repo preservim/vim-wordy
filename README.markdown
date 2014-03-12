@@ -15,7 +15,7 @@
 * Includes 16 dictionaries covering different types of word usage
 * Buffer-scoped configuration (leaves your global settings alone)
 * Unicode-friendly, including support for ‘typographic quotes’
-* User-configurable ring of dictionaries
+* Supports a user-configurable ring of dictionaries
 
 ## What is _wordy_?
 
@@ -79,26 +79,33 @@ least until _wordy_ feels the urge to build again.
 
 ### Ring
 
-Optionally map a key in your `.vimrc` to rapidly cycle among available dictionaries:
-
-```
-nnoremap <silent> K :NextWordy<cr>
-```
-
-In addition, you can define your own ring of dictionaries. This is the
-default, which you can override in your `.vimrc`:
+Define your own ring of dictionaries, overriding the default one in your
+`.vimrc`:
 
 ```
 let g:wordy#ring = [
-  \ 'jargon'    ,
-  \ 'passive'   ,
-  \ 'puffery'   ,
-  \ 'redundant' ,
-  \ 'to-be'     ,
-  \ 'trite'     ,
-  \ 'weak'      ,
-  \ 'weasel'    ,
+  \ 'weak',
+  \ ['being', 'passive-voice', ],
+  \ 'business-jargon',
+  \ 'weasel',
+  \ 'puffery',
+  \ ['problematic', 'redundant', ],
+  \ ['colloquial', 'idiomatic', 'similies', ],
   \ ]
+```
+
+You can navigate the ring with the following commands:
+
+```
+:NextWordy
+:PrevWordy
+```
+
+Optionally create a key map in your `.vimrc` to rapidly cycle through the
+ring:
+
+```
+nnoremap <silent> K :NextWordy<cr>
 ```
 
 ## Using _wordy_
@@ -119,7 +126,7 @@ go to those words flagged by _wordy_.
 ### Weak and lazy usage
 
 ```
-:WeakWordy
+:WeakWordy (weak)
 ```
 
 Weak and lazy words are common in first drafts.
@@ -147,8 +154,8 @@ asking whether it detracts from the point you are trying to make.
 ### Redundant and problematic usage
 
 ```
-:WordyWordy
-:ProblemWordy
+:WordyWordy (redundant)
+:ProblemWordy (problematic)
 ```
 
 Did you ever receive an ‘advance warning’ when a mere warning would do?
@@ -165,15 +172,16 @@ targeted by _ProblemWordy_.
 
 [1]: http://www.dailywritingtips.com/50-problem-words-and-phrases/
 
-### Puffery and Jargonese
+### Puffery and Jargon
 
 > “The man embodies _authenticity_; his _disruptive_ ideas on
 > _self-actualization_ reflect his _dynamic_ and _transformative_
-> personality.” (puffery and jargonese)
+> personality.” (puffery and jargon)
 
 ```
-:PuffWordy
-:JargonWordy
+:PuffWordy (puffery)
+:JargonWordy (business-jargon)
+:ArtJargonWordy (art-jargon)
 ```
 
 Instead of puffery, demonstrate through details.
@@ -185,7 +193,7 @@ Instead of puffery, demonstrate through details.
 ### Manipulative language
 
 ```
-:WeaselWordy
+:WeaselWordy (weasel)
 ```
 
 Words can be used to hide or obscure a weak position, or to cast doubt on
@@ -202,8 +210,8 @@ will seek to purge such loaded language from your writing.
 ### To be and the passive voice
 
 ```
-:BeingWordy
-:PassiveWordy  (includes BeingWordy)
+:BeingWordy (being)
+:PassiveWordy (being, passive-voice)
 ```
 
 You may find this dictionary useful in avoiding overuse of the many forms
@@ -212,7 +220,7 @@ of the verb to be, often found in overly-passive sentences.
 ### Colloquialisms, Idioms, and Similies
 
 ```
-:TriteWordy
+:TriteWordy (colloquial, idiomatic, similies)
 ```
 
 Dictionaries for uncovering the tired cliché, including colloquial and
@@ -221,10 +229,10 @@ idiomatic phrases scraped from Wiktionary and Wikipedia.
 ### Miscellaneous
 
 ```
-:SaidWordy
-:OpineWordy
-:AintWordy
-:VagueTimeWordy  (renamed from TimeWordy)
+:SaidWordy (said-synonyms)
+:OpineWordy (opinion)
+:AintWordy (contractions)
+:VagueTimeWordy (vague-time)
 ```
 
 A few dictionaries to serve specific needs.
