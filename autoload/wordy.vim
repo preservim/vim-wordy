@@ -75,7 +75,7 @@ function! wordy#jump(mode)
       \ ? 0
       \ : (l:avail_count - 1)
   else
-    let g:wordy_ring_index = (g:wordy_ring_index + a:mode) % l:avail_count
+    let g:wordy_ring_index = (g:wordy_ring_index + l:avail_count + a:mode) % l:avail_count
   endif
   call wordy#init({ 'd': g:wordy#ring[ g:wordy_ring_index ]})
 endfunction
