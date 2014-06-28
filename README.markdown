@@ -5,7 +5,7 @@
 <br/>
 
 - - -
-![demo](screenshots/demo.gif)
+![demo](http://i.imgur.com/DzfjEh4.gif)
 - - -
 
 ## Features of the _wordy_ plugin
