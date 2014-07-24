@@ -43,6 +43,25 @@ command -nargs=0 AintWordy         call wordy#init({ 'd': 'contractions' })
 command -nargs=0 NextWordy         call wordy#jump(1)
 command -nargs=0 PrevWordy         call wordy#jump(-1)
 
+" prefix aliases
+command WordyNo         NoWordy
+command WordyBeing      BeingWordy
+command WordyPassive    PassiveWordy
+command WordyWeak       WeakWordy
+command WordyLazy       LazyWordy
+command WordyProblem    ProblemWordy
+command WordyJargon     JargonWordy
+command WordyArtJargon  ArtJargonWordy
+command WordyPuff       PuffWordy
+command WordyWeasel     WeaselWordy
+command WordyTrite      TriteWordy
+command WordyVagueTime  VagueTimeWordy
+command WordyOpine      OpineWordy
+command WordySaid       SaidWordy
+command WordyAint       AintWordy
+command WordyNext       NextWordy
+command WordyPrev       PrevWordy
+
 let g:wordy_ring_index = -1     " start at beginning
 
 " user configurable ring of dictionaries
