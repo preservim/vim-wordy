@@ -90,6 +90,8 @@ let g:wordy#ring = [
   \ 'puffery',
   \ ['problematic', 'redundant', ],
   \ ['colloquial', 'idiomatic', 'similies', ],
+  \ 'art-jargon',
+  \ ['contractions', 'opinion', 'vague-time', 'said-synonyms', ],
   \ ]
 ```
 
@@ -122,10 +124,20 @@ go to those words flagged by _wordy_.
 * `]s`			- Move to next misspelled word after the cursor.
 * `[s`			- Like `]s` but search backwards
 
+_NEW_ - You can browse through a flattened list of dictionaries specified
+in your ring with:
+
+```
+:Wordy <tab>
+```
+
+Note that the order of dictionaries in your ring is preserved, so you 
+can place your most-frequently-used ones at the start of the list.
+
 ### Weak and lazy usage
 
 ```
-:WeakWordy (weak)
+:Wordy weak
 ```
 
 Weak and lazy words are common in first drafts.
@@ -153,8 +165,8 @@ asking whether it detracts from the point you are trying to make.
 ### Redundant and problematic usage
 
 ```
-:WordyWordy (redundant)
-:ProblemWordy (problematic)
+:Wordy redundant
+:Wordy problematic
 ```
 
 Did you ever receive an ‘advance warning’ when a mere warning would do?
@@ -167,7 +179,7 @@ erase redundancies, as the British will ‘protest against’ where Americans
 will simply ‘protest’.
 
 See [50 Problem Words and Phrases][1] for more detail on those issues
-targeted by _ProblemWordy_.
+targeted by _problematic_.
 
 [1]: http://www.dailywritingtips.com/50-problem-words-and-phrases/
 
@@ -178,9 +190,9 @@ targeted by _ProblemWordy_.
 > personality.” (puffery and jargon)
 
 ```
-:PuffWordy (puffery)
-:JargonWordy (business-jargon)
-:ArtJargonWordy (art-jargon)
+:Wordy puffery
+:Wordy business-jargon
+:Wordy art-jargon
 ```
 
 Instead of puffery, demonstrate through details.
@@ -192,7 +204,7 @@ Instead of puffery, demonstrate through details.
 ### Manipulative language
 
 ```
-:WeaselWordy (weasel)
+:Wordy weasel
 ```
 
 Words can be used to hide or obscure a weak position, or to cast doubt on
@@ -209,8 +221,8 @@ will seek to purge such loaded language from your writing.
 ### To be and the passive voice
 
 ```
-:BeingWordy (being)
-:PassiveWordy (being, passive-voice)
+:Wordy being
+:Wordy passive-voice
 ```
 
 You may find this dictionary useful in avoiding overuse of the many forms
@@ -219,7 +231,9 @@ of the verb to be, often found in overly-passive sentences.
 ### Colloquialisms, Idioms, and Similies
 
 ```
-:TriteWordy (colloquial, idiomatic, similies)
+:Wordy colloquial
+:Wordy idiomatic
+:Wordy similies
 ```
 
 Dictionaries for uncovering the tired cliché, including colloquial and
@@ -228,22 +242,22 @@ idiomatic phrases scraped from Wiktionary and Wikipedia.
 ### Miscellaneous
 
 ```
-:SaidWordy (said-synonyms)
-:OpineWordy (opinion)
-:AintWordy (contractions)
-:VagueTimeWordy (vague-time)
+:Wordy said-synonyms
+:Wordy opinion
+:Wordy contractions
+:Wordy vague-time
 ```
 
 A few dictionaries to serve specific needs.
 
 If you’re writing to be neutral, you will want to avoid editorializing
-(_OpineWordy_) and loaded use of ‘said’ (_SaidWordy_).
+(`opinion`) and loaded use of ‘said’ (`said-synonyms`).
 
 If you’re writing formally, you’ll want to identify unintentional
-contractions with _AintWordy_. A warning that it’s not yet capturing most
+contractions with `contractions`. A warning that it’s not yet capturing most
 instances of “’s”, such as “Joe’s not here.”
 
-And finally, _VagueTimeWordy_ finds where you are using vague descriptions of
+And finally, `vague-time` finds where you are using vague descriptions of
 time where you could be more specific.
 
 ## See also
