@@ -109,6 +109,16 @@ ring's dictionaries:
 nnoremap <silent> K :NextWordy<cr>
 ```
 
+**NEW** - You can browse through a flattened list of dictionaries
+specified in your ring with:
+
+```
+:Wordy <tab>
+```
+
+Note that the order of dictionaries in your ring is preserved, so you 
+can place your most-frequently-used ones at the start of the list.
+
 ## Using _wordy_
 
 You’ll use the commands that follow to enable _wordy_. To disable it and
@@ -123,16 +133,6 @@ go to those words flagged by _wordy_.
 
 * `]s`			- Move to next misspelled word after the cursor.
 * `[s`			- Like `]s` but search backwards
-
-_NEW_ - You can browse through a flattened list of dictionaries specified
-in your ring with:
-
-```
-:Wordy <tab>
-```
-
-Note that the order of dictionaries in your ring is preserved, so you 
-can place your most-frequently-used ones at the start of the list.
 
 ### Weak and lazy usage
 
