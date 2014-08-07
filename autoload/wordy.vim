@@ -89,4 +89,19 @@ function! wordy#jump(mode)
   endif
 endfunction
 
+" Code from bairui@#vim.freenode
+" https://gist.github.com/3322468
+function! wordy#flatten(list)
+  let val = []
+  for elem in a:list
+    if type(elem) == type([])
+      call extend(val, wordy#flatten(elem))
+    else
+      call add(val, elem)
+    endif
+    unlet elem
+  endfor
+  return val
+endfunction
+
 " vim:ts=2:sw=2:sts=2
