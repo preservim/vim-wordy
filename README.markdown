@@ -116,9 +116,6 @@ specified in your ring with:
 :Wordy <tab>
 ```
 
-Note that the order of dictionaries in your ring is preserved, so you 
-can place your most-frequently-used ones at the start of the list.
-
 ## Using _wordy_
 
 You’ll use the commands that follow to enable _wordy_. To disable it and

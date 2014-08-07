@@ -39,7 +39,7 @@ if !exists('g:wordy#ring')
 endif
 
 function! <SID>chooseDict(ArgLead, CmdLine, CursorPos)
-  return wordy#flatten(g:wordy#ring)
+  return sort(wordy#flatten(g:wordy#ring))
 endfunction
 
 " Wordy {dict_name}
