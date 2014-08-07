@@ -128,8 +128,11 @@ _NEW_ - You can browse through a flattened list of dictionaries specified
 in your ring with:
 
 ```
-:Wordy<tab>
+:Wordy <tab>
 ```
+
+Note that the order of dictionaries in your ring is preserved, so you 
+can place your most-frequently-used ones at the start of the list.
 
 ### Weak and lazy usage
 
