@@ -33,14 +33,14 @@ the usage is sound, you can elect to keep it —_wordy_ be damned.
 
 Off-the-shelf proofreading software can scan your text for potential problems
 and provide comprehensive feedback. However, it may require a complex
-software installation or transmission of your work to a remote server for 
-checking. 
+software installation or transmission of your work to a remote server for
+checking.
 
 _wordy_ stands ready as a simple alternative to these comprehensive tools,
-focusing narrowly on identifying potential problems that might otherwise 
+focusing narrowly on identifying potential problems that might otherwise
 be missed. To compensate for _wordy_’s bare-bones approach, it’s best used
 in concert with the [literature on usage][lit] (Strunk and White, e.g.)
-and websites like the [English Language & Usage Stack Exchange][ese]. 
+and websites like the [English Language & Usage Stack Exchange][ese].
 
 [lit]: http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks&field-keywords=English+Usage
 [ese]: http://english.stackexchange.com
@@ -58,7 +58,7 @@ package manager.
 
 ### On demand
 
-Using this plugin's commands does not require any special configuration.
+Using this plugin’s commands does not require any special configuration.
 
 Important note: on the first use of each of the plugin’s dictionaries,
 a spell file will be built. This produces a message that resembles:
@@ -205,14 +205,14 @@ Instead of puffery, demonstrate through details.
 ```
 
 Words can be used to hide or obscure a weak position, or to cast doubt on
-a strong one. They can be used to mislead, to evade blame, or to claim credit 
+a strong one. They can be used to mislead, to evade blame, or to claim credit
 where none has been earned.
 
 * “mistakes were made”
 * “discounted up to 50% off”
 * “most voters feel that my opponent can’t be trusted”
 
-Assuming that you’re not intentionally trying to manipulate others, you 
+Assuming that you’re not intentionally trying to manipulate others, you
 will seek to purge such loaded language from your writing.
 
 ### To be and the passive voice
@@ -269,7 +269,7 @@ If you find this plugin useful, you may want to check out these others by
 * [vim-colors-pencil][cp] - color scheme for Vim inspired by IA Writer
 * [vim-lexical][lx] - building on Vim’s spell-check and thesaurus/dictionary completion
 * [vim-litecorrect][lc] - lightweight auto-correction for Vim
-* [vim-one][vo] - make use of Vim’s _+clientserver_ capabilities 
+* [vim-one][vo] - make use of Vim’s _+clientserver_ capabilities
 * [vim-pencil][pn] - rethinking Vim as a tool for writers
 * [vim-textobj-quote][qu] - extends Vim to support typographic (‘curly’) quotes
 * [vim-textobj-sentence][ts] - improving on Vim's native sentence motion command

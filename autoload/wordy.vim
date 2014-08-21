@@ -53,15 +53,24 @@ function! wordy#init(...) abort
       let l:msg = 'Unable to read source: ' . l:src_path
     endif
   endfor
+
+  let l:prefix = 'wordy: '
   if len(l:dst_paths) > 0
     let b:original_spl = &spelllang
     exe 'setlocal spelllang=' . l:lang . ',' . join(l:dst_paths, ',')
     setlocal spell
-    let l:msg = join(l:dicts, ', ')
+
+    " the magic numbers derived empirically with MacVim
+    " docs for rulerformat say 'The default ruler width is 17 characters'
+    let l:msg = l:prefix . join(l:dicts, ', ')
+    let l:max_len = &columns - strlen(l:prefix) - 5 - (&ruler ? 18 : 0)
+    if strlen(l:msg) > l:max_len
+      let l:msg = strpart(l:msg, 0, l:max_len-3) . '...'
+    endif
   else
-    let l:msg = 'off'
+    let l:msg = l:prefix . 'off'
   endif
-  echohl ModeMsg | echo 'wordy: ' . l:msg | echohl NONE
+  echohl ModeMsg | echo l:msg | echohl NONE
 endfunction
 
 function! wordy#jump(mode)
