@@ -39,7 +39,8 @@ if !exists('g:wordy#ring')
 endif
 
 function! <SID>chooseDict(ArgLead, CmdLine, CursorPos)
-  return sort(wordy#flatten(g:wordy#ring))
+  return filter(sort(wordy#flatten(g:wordy#ring)),
+               \ "stridx(v:val,'".a:ArgLead."') == 0")
 endfunction
 
 " Wordy {dict_name}
