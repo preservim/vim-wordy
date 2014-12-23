@@ -143,13 +143,13 @@ We sabotage our writing though weak language, kicking the legs out from
 beneath our verbs and tearing at the foundations of our nouns, watering
 down the very points that we are trying to drive home.
 
-* “I _got_ up and _went_ to work.” (weak)
-* “I awoke and walked to work.” (better)
+* “I _got_ up at precisely 8 AM.” (weak)
+* “I woke up at precisely 8 AM.” (better)
 
 We diminish the weight of our ideas by adding modifiers and fillers.
 
-* “The regiment _that_ took the hill was _perhaps_ a hundred strong.” (weak)
-* “Despite heavy losses, the regiment took the hill.” (better)
+* “That night was _perhaps_ the most important moment of my life, and I don't _think_ I'll ever forget it.” (weak)
+* “That night was the most important moment of my life, and I'll never forget it.” (better)
 
 Words can also be weakened through overuse.
 
