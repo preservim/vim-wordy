@@ -31,11 +31,17 @@ function! wordy#init(...) abort
   let l:encoding = get(l:args, 'encoding', 'utf-8')
   for l:dict in l:dicts
     let l:data_dir = g:wordy_dir . '/data'
-    if has('nvim')
-      let l:data_dir = l:data_dir . '-neovim'
-    endif
     let l:src_path = l:data_dir . '/' . l:lang . '/' . l:dict . '.dic'
     if filereadable(l:src_path)
+      if has('nvim')
+        let wlist = readfile(l:src_path)
+        let nlist = []
+        for witem in wlist
+          call add(nlist, substitute(witem, '!$', '?', ''))
+        endfor
+        let l:src_path = "/tmp/" . "_wordy_" . l:dict
+        call writefile(nlist, l:src_path)
+      endif
       let l:spell_dir = g:wordy_dir . '/spell'
       if !isdirectory(l:spell_dir)
         call mkdir(expand(l:spell_dir), "p")
@@ -51,6 +57,9 @@ function! wordy#init(...) abort
         call add(l:dst_paths, l:dst_path)
       else
         let l:msg = 'Unable to read target: ' . l:dst_path
+      endif
+      if has('nvim')
+        call delete(l:src_path)
       endif
     else
       let l:msg = 'Unable to read source: ' . l:src_path
