@@ -31,6 +31,9 @@ function! wordy#init(...) abort
   let l:encoding = get(l:args, 'encoding', 'utf-8')
   for l:dict in l:dicts
     let l:data_dir = g:wordy_dir . '/data'
+    if has('nvim')
+      let l:data_dir = l:data_dir . '-neovim'
+    endif
     let l:src_path = l:data_dir . '/' . l:lang . '/' . l:dict . '.dic'
     if filereadable(l:src_path)
       let l:spell_dir = g:wordy_dir . '/spell'
