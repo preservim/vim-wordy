@@ -115,6 +115,11 @@ specified in your ring with:
 ```
 :Wordy <tab>
 ```
+and optionally map a key such as `\w` in your `.vimrc` to it by
+```
+if !&wildcharm | set wildcharm=<C-z> | endif
+execute 'nnoremap <leader>w :Wordy<space>'.nr2char(&wildcharm)
+```
 
 ## Using _wordy_
 
