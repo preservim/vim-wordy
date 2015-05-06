@@ -109,14 +109,16 @@ ring's dictionaries:
 nnoremap <silent> K :NextWordy<cr>
 ```
 
-**NEW** - You can browse through a flattened list of dictionaries
+You can browse through a flattened list of dictionaries
 specified in your ring with:
 
 ```
 :Wordy <tab>
 ```
+
 and optionally map a key such as `\w` in your `.vimrc` to it by
-```
+
+```vim
 if !&wildcharm | set wildcharm=<C-z> | endif
 execute 'nnoremap <leader>w :Wordy<space>'.nr2char(&wildcharm)
 ```
