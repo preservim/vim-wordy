@@ -33,6 +33,13 @@ function! wordy#init(...) abort
     let l:data_dir = g:wordy_dir . '/data'
     let l:src_path = l:data_dir . '/' . l:lang . '/' . l:dict . '.dic'
     if filereadable(l:src_path)
+      if has('nvim')
+        " Dynamically convert SpellBad words into SpellRare words under NeoVim.
+        " See issue 15 for details: https://github.com/reedes/vim-wordy/pull/15
+        let l:rare_dic = map(readfile(l:src_path), "substitute(v:val, '!$', '?', '')")
+        let l:src_path = tempname()
+        call writefile(l:rare_dic, l:src_path)
+      endif
       let l:spell_dir = g:wordy_dir . '/spell'
       if !isdirectory(l:spell_dir)
         call mkdir(expand(l:spell_dir), "p")
