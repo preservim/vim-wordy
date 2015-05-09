@@ -81,7 +81,7 @@ least until _wordy_ feels the urge to build again.
 Define your own ring of dictionaries, overriding the default one in your
 `.vimrc`:
 
-```
+```vim
 let g:wordy#ring = [
   \ 'weak',
   \ ['being', 'passive-voice', ],
@@ -97,7 +97,7 @@ let g:wordy#ring = [
 
 You can navigate the ring with the following commands:
 
-```
+```vim
 :NextWordy
 :PrevWordy
 ```
@@ -105,14 +105,14 @@ You can navigate the ring with the following commands:
 Optionally map a key in your `.vimrc` to rapidly cycle through the
 ring's dictionaries:
 
-```
+```vim
 nnoremap <silent> K :NextWordy<cr>
 ```
 
 You can browse through a flattened list of dictionaries
 specified in your ring with:
 
-```
+```vim
 :Wordy <tab>
 ```
 
@@ -128,7 +128,7 @@ execute 'nnoremap <leader>w :Wordy<space>'.nr2char(&wildcharm)
 You’ll use the commands that follow to enable _wordy_. To disable it and
 restore your previous spell environment, enter the command:
 
-```
+```vim
 :NoWordy
 ```
 
@@ -140,7 +140,7 @@ go to those words flagged by _wordy_.
 
 ### Weak and lazy usage
 
-```
+```vim
 :Wordy weak
 ```
 
@@ -168,7 +168,7 @@ asking whether it detracts from the point you are trying to make.
 
 ### Redundant and problematic usage
 
-```
+```vim
 :Wordy redundant
 :Wordy problematic
 ```
@@ -193,7 +193,7 @@ targeted by _problematic_.
 > _self-actualization_ reflect his _dynamic_ and _transformative_
 > personality.” (puffery and jargon)
 
-```
+```vim
 :Wordy puffery
 :Wordy business-jargon
 :Wordy art-jargon
@@ -207,7 +207,7 @@ Instead of puffery, demonstrate through details.
 
 ### Manipulative language
 
-```
+```vim
 :Wordy weasel
 ```
 
@@ -224,7 +224,7 @@ will seek to purge such loaded language from your writing.
 
 ### To be and the passive voice
 
-```
+```vim
 :Wordy being
 :Wordy passive-voice
 ```
@@ -234,7 +234,7 @@ of the verb to be, often found in overly-passive sentences.
 
 ### Colloquialisms, Idioms, and Similies
 
-```
+```vim
 :Wordy colloquial
 :Wordy idiomatic
 :Wordy similies
@@ -245,7 +245,7 @@ idiomatic phrases scraped from Wiktionary and Wikipedia.
 
 ### Miscellaneous
 
-```
+```vim
 :Wordy said-synonyms
 :Wordy opinion
 :Wordy contractions
