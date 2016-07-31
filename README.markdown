@@ -266,8 +266,10 @@ time where you could be more specific.
 
 ## See also
 
-[Words To Avoid in Creative Writing][wa] - a brief guide to usage by writer Cary Morton
+* [danielbmarques/vim-ditto][vd] - new plugin to highlight repeated words
+* [Words To Avoid in Creative Writing][wa] - a brief guide to usage by writer Cary Morton
 
+[vd]: https://github.com/danielbmarques/vim-ditto
 [wa]: http://darlingmionette.deviantart.com/art/Words-To-Avoid-152886782
 
 If you find this plugin useful, you may want to check out these others by
