@@ -16,6 +16,7 @@
 * Buffer-scoped configuration (leaves your global settings alone)
 * Unicode-friendly, including support for ‘typographic quotes’
 * User-configurable ring of dictionaries
+* *NEW* adjectives and adverbs, to help you detect overuse
 
 ## What is _wordy_?
 
@@ -51,8 +52,13 @@ _wordy_ may require a recent version of Vim.
 
 ## Installation
 
-Best installed using Pathogen, Vundle, Neobundle, or your favorite Vim
-package manager.
+_wordy_ is best installed using a Vim package manager, such as
+[Vundle][vnd], [Plug][plg], [NeoBundle][nbn], or [Pathogen][pth].
+
+[vnd]: https://github.com/gmarik/Vundle.vim
+[plg]: https://github.com/junegunn/vim-plug
+[nbn]: https://github.com/Shougo/neobundle.vim
+[pth]: https://github.com/tpope/vim-pathogen
 
 ## Configuration
 
@@ -92,6 +98,8 @@ let g:wordy#ring = [
   \ ['colloquial', 'idiomatic', 'similies', ],
   \ 'art-jargon',
   \ ['contractions', 'opinion', 'vague-time', 'said-synonyms', ],
+  \ 'adjectives',
+  \ 'adverbs',
   \ ]
 ```
 
@@ -106,7 +114,9 @@ Optionally map a key in your `.vimrc` to rapidly cycle through the
 ring's dictionaries:
 
 ```vim
-nnoremap <silent> K :NextWordy<cr>
+noremap <silent> <F8> :<C-u>NextWordy<cr>
+xnoremap <silent> <F8> :<C-u>NextWordy<cr>
+inoremap <silent> <F8> <C-o>:NextWordy<cr>
 ```
 
 You can browse through a flattened list of dictionaries
@@ -242,6 +252,15 @@ of the verb to be, often found in overly-passive sentences.
 
 Dictionaries for uncovering the tired cliché, including colloquial and
 idiomatic phrases scraped from Wiktionary and Wikipedia.
+
+### Adjectives and Adverbs
+
+```vim
+:Wordy adjectives
+:Wordy adverbs
+```
+
+Dictionaries to help you detect the overuse of modifiers.
 
 ### Miscellaneous
 

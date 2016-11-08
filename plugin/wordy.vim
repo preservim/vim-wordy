@@ -35,6 +35,8 @@ if !exists('g:wordy#ring')
     \ ['colloquial', 'idiomatic', 'similies', ],
     \ 'art-jargon',
     \ ['contractions', 'opinion', 'vague-time', 'said-synonyms', ],
+    \ 'adjectives',
+    \ 'adverbs',
     \ ]
 endif
 
