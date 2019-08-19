@@ -16,6 +16,10 @@ set cpo&vim
 " need directory to manage spell files
 let g:wordy_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h:h')
 
+if !exists('g:wordy_spell_dir')
+  let g:wordy_spell_dir = g:wordy_dir
+endif
+
 command -nargs=0 NoWordy           call wordy#init({})
 
 command -nargs=0 NextWordy         call wordy#jump(1)
