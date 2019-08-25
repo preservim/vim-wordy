@@ -49,7 +49,8 @@ function! wordy#init(...) abort
       if !isdirectory(l:spell_dir)
         call mkdir(expand(l:spell_dir), "p")
       endif
-      let l:dst_path = l:spell_dir . '/' . l:dict . '.' . l:lang . '.' . l:encoding . '.spl'
+      " The dict name is the 'language' part of the filename
+      let l:dst_path = l:spell_dir . '/' . l:dict . '.' . l:encoding . '.spl'
       if get(l:args, 'force', 0) ||
         \ !filereadable(l:dst_path) ||
         \ getftime(l:dst_path) < getftime(l:src_path)
@@ -69,7 +70,9 @@ function! wordy#init(...) abort
   let l:prefix = 'wordy: '
   if len(l:dst_paths) > 0
     let b:original_spl = &spelllang
-    exe 'setlocal spelllang=' . l:lang . ',' . join(l:dst_paths, ',')
+    " vim looks up the files in the ./spell/ directory using spell-load (see
+    " the vim docs) so full paths are not allowed.
+    exe 'setlocal spelllang=' . l:lang . ',' . join(l:dicts, ',')
     setlocal spell
 
     " the magic numbers derived empirically with MacVim
