@@ -303,6 +303,7 @@ If you find this plugin useful, you may want to check out these others by
 * [vim-textobj-sentence][ts] - improving on Vim's native sentence motion command
 * [vim-thematic][th] - modify Vim’s appearance to suit your task and environment
 * [vim-wheel][wh] - screen-anchored cursor movement for Vim
+* [vim-wordchipper][wc] - power tool for shredding text in Insert mode
 
 [re]: https://github.com/reedes
 [cp]: http://github.com/reedes/vim-colors-pencil
@@ -314,6 +315,7 @@ If you find this plugin useful, you may want to check out these others by
 [qu]: http://github.com/reedes/vim-textobj-quote
 [th]: http://github.com/reedes/vim-thematic
 [wh]: http://github.com/reedes/vim-wheel
+[wc]: http://github.com/reedes/vim-wordchipper
 
 ## Future development
 
