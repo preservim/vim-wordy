@@ -45,7 +45,7 @@ function! wordy#init(...) abort
         let l:src_path = l:rare_path
       endif
 
-      let l:spell_dir = g:wordy_dir . '/spell'
+      let l:spell_dir = g:wordy_spell_dir . '/spell'
       if !isdirectory(l:spell_dir)
         call mkdir(expand(l:spell_dir), "p")
       endif

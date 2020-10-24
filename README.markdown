@@ -283,6 +283,14 @@ instances of “’s”, such as “Joe’s not here.”
 And finally, `vague-time` finds where you are using vague descriptions of
 time where you could be more specific.
 
+## Configuration
+
+Change where `vim-wordy` stores cached spelling files using:
+
+```
+let g:wordy_spell_dir = '/home/my-user/wordy'
+```
+
 ## See also
 
 * [danielbmarques/vim-ditto][vd] - new plugin to highlight repeated words
