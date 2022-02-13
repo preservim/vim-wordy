@@ -1,7 +1,7 @@
 " ============================================================================
 " File:        autoload/wordy.vim
 " Description: autoload script for vim-wordy plugin
-" Maintainer:  Reed Esau <github.com/reedes>
+" Maintainer:  preservim <https://github.com/preservim>
 " Last Change: January 14, 2014
 " License:     The MIT License (MIT)
 " ============================================================================
