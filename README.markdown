@@ -5,7 +5,7 @@
 <br/>
 
 - - -
-![demo](http://i.imgur.com/cXDCwdE.gif)
+![demo](https://i.imgur.com/cXDCwdE.gif)
 - - -
 
 ## Features of the _wordy_ plugin
@@ -43,8 +43,8 @@ be missed. To compensate for _wordy_’s bare-bones approach, it’s best used
 in concert with the [literature on usage][lit] (Strunk and White, e.g.)
 and websites like the [English Language & Usage Stack Exchange][ese].
 
-[lit]: http://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks&field-keywords=English+Usage
-[ese]: http://english.stackexchange.com
+[lit]: https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Dstripbooks&field-keywords=English+Usage
+[ese]: https://english.stackexchange.com
 
 ## Requirements
 
@@ -52,13 +52,15 @@ _wordy_ may require a recent version of Vim.
 
 ## Installation
 
-_wordy_ is best installed using a Vim package manager, such as
-[Vundle][vnd], [Plug][plg], [NeoBundle][nbn], or [Pathogen][pth].
+You can install using your favorite Vim package manager. (E.g.,
+[Pathogen][pathogen], [Vundle][vundle], or [Plug][plug].) If you are using
+a recent version of vim or neovim, you can also use native package
+support. (See [:help packages][packages].)
 
-[vnd]: https://github.com/gmarik/Vundle.vim
-[plg]: https://github.com/junegunn/vim-plug
-[nbn]: https://github.com/Shougo/neobundle.vim
-[pth]: https://github.com/tpope/vim-pathogen
+[pathogen]: https://github.com/tpope/vim-pathogen
+[vundle]: https://github.com/VundleVim/Vundle.vim
+[plug]: https://github.com/junegunn/vim-plug
+[packages]: https://vimhelp.org/repeat.txt.html#packages
 
 ## Configuration
 
@@ -195,7 +197,7 @@ will simply ‘protest’.
 See [50 Problem Words and Phrases][1] for more detail on those issues
 targeted by _problematic_.
 
-[1]: http://www.dailywritingtips.com/50-problem-words-and-phrases/
+[1]: https://www.dailywritingtips.com/50-problem-words-and-phrases/
 
 ### Puffery and Jargon
 
@@ -297,15 +299,14 @@ let g:wordy_spell_dir = '/home/my-user/wordy'
 * [Words To Avoid in Creative Writing][wa] - a brief guide to usage by writer Cary Morton
 
 [vd]: https://github.com/danielbmarques/vim-ditto
-[wa]: http://darlingmionette.deviantart.com/art/Words-To-Avoid-152886782
+[wa]: https://darlingmionette.deviantart.com/art/Words-To-Avoid-152886782
 
-If you find this plugin useful, you may want to check out these others by
-[@reedes][re]:
+If you find this plugin useful, you may want to check out these others
+originally by [@reedes][re]:
 
 * [vim-colors-pencil][cp] - color scheme for Vim inspired by IA Writer
 * [vim-lexical][lx] - building on Vim’s spell-check and thesaurus/dictionary completion
 * [vim-litecorrect][lc] - lightweight auto-correction for Vim
-* [vim-one][vo] - make use of Vim’s _+clientserver_ capabilities
 * [vim-pencil][pn] - rethinking Vim as a tool for writers
 * [vim-textobj-quote][qu] - extends Vim to support typographic (‘curly’) quotes
 * [vim-textobj-sentence][ts] - improving on Vim's native sentence motion command
@@ -314,16 +315,15 @@ If you find this plugin useful, you may want to check out these others by
 * [vim-wordchipper][wc] - power tool for shredding text in Insert mode
 
 [re]: https://github.com/reedes
-[cp]: http://github.com/reedes/vim-colors-pencil
-[lx]: http://github.com/reedes/vim-lexical
-[lc]: http://github.com/reedes/vim-litecorrect
-[vo]: http://github.com/reedes/vim-one
-[pn]: http://github.com/reedes/vim-pencil
-[ts]: http://github.com/reedes/vim-textobj-sentence
-[qu]: http://github.com/reedes/vim-textobj-quote
-[th]: http://github.com/reedes/vim-thematic
-[wh]: http://github.com/reedes/vim-wheel
-[wc]: http://github.com/reedes/vim-wordchipper
+[cp]: https://github.com/preservim/vim-colors-pencil
+[lx]: https://github.com/preservim/vim-lexical
+[lc]: https://github.com/preservim/vim-litecorrect
+[pn]: https://github.com/preservim/vim-pencil
+[ts]: https://github.com/preservim/vim-textobj-sentence
+[qu]: https://github.com/preservim/vim-textobj-quote
+[th]: https://github.com/preservim/vim-thematic
+[wh]: https://github.com/preservim/vim-wheel
+[wc]: https://github.com/preservim/vim-wordchipper
 
 ## Future development
 
@@ -332,7 +332,9 @@ Support for other languages will be added if there’s interest. (Hint: pull
 requests!)
 
 _wordy_ is a work in progress. If you’ve spotted a problem or have an idea
-on improving this plugin, please post it to the github project issue page.
-Contributions are welcome.
+on improving this plugin, please post it to the [GitHub project issue
+page][issues]. Contributions are welcome.
+
+[issues]: https://github.com/preservim/vim-wordy/issues
 
 <!-- vim: set tw=74 :-->

@@ -1,7 +1,7 @@
 " =============================================================================
 " File:        plugin/wordy.vim
 " Description: Usage support for the Vim text editor
-" Maintainer:  Reed Esau <github.com/reedes>
+" Maintainer:  preservim <https://github.com/preservim>
 " Last Change: January 14, 2014
 " License:     The MIT License (MIT)
 " =============================================================================
